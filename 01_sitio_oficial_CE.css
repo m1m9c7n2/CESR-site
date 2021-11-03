@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	padding-right: 0%;
+	padding-left: 0%;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	15;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-: 0 auto;
+	width: 100%;
+	float: left;
+	display: inline;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-indent: 0px;
+	font-size: large;
+	text-align: center;
+}
+
+.fluidList {
+	list-style: none;
+	list-style-image: none;
+	margin: 0 auto;
+	padding: 0;
+	margin-right: auto;
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	width: 96%;
+	clear: none;
+	float: none;
+	background-color: #B2D6E8;
+	align: right;
+	text-align: center;
+	margin: 0 auto;
+}
+#div1 {
+	border-bottom-width: 10px;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+}
+.pie1_inicio {
+	width: 20%;
+	background-color: #B7B7B7;
+	margin-left: 1.3513%;
+	clear: none;
+}
+.Pie_CE {
+	background-color: #B7B7B7;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+.Direccion {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background-color: #c8dce6;
+	padding-bottom: 20px;
+	color: #525252;
+}
+.Comicion {
+	margin-left: auto;
+	margin-right: auto;
+}
+.Menu_titu {
+	background-color: #1387C4;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: large;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+	color: #c8dce6;
+}
+.TEXTOS_DEP {
+	width: 90%;
+	padding-top: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 5%;
+	margin-bottom: 15px;
+	text-align: left;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+.encab_Dep {
+	background-color: #1387C4;
+	height: 30px;
+	margin-top: 15px;
+	color: #C8DCE6;
+}
+.Map_CE {
+	background-color: #C8DCE6;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	color: #b2d6e8;
+}
+.TituForm {
+	padding-top: 15px;
+	color: #C8DCE6;
+}
+.Botones_DEP {
+}
+.Stage {
+}
+.Animate {
+	background-attachment: fixed;
+	background-position: 0 0%;
+	padding-top: 70px;
+	background-size: 80% auto;
+	padding-bottom: 35px;
+	background-image: url(img/collage_03_color%20copia.png);
+}
+.Noti_Club {
+	margin-top: 3%;
+	margin-right: 3%;
+	margin-left: 3%;
+	width: 83%;
+	background-color: #E9E9E9;
+	text-align: left;
+	padding-left: 5%;
+	border-radius: 5%;
+	padding-right: 5%;
+	padding-top: 20px;
+}
+.menu_opSocios {
+	clear: both;
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-radius: 5%;
+	background-color: #5698C8;
+}
+.bot_deport {
+	padding-top: 30px;
+}
+#creditfooter { visibility : hidden; 
+} 
+.feedburnerFeedBlock li {
+	list-style: none;
+	padding: 0 0 0 7px;
+	margin: 0 0 0-20px;
+	background: url(i82.servimg.com/u/f82/13/32/71/45/bbbbbb10.png) no-repeat -8px 4px;
+}
+.feedburnerFeedBlock {
+	font-size: 13px;
+	font-family: verdana;
+	margin-bottom: -20px;
+	margin-top: -5px;
+	/* [disabled]font-weight: bold; */
+}
+.feedTitle {
+	color: red;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+.Noticias_Blogg {
+	background-color: #FFFFFF;
+	margin-top: 20px;
+	width: 94%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.Descargas_01 {
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+	margin-top: 20px;
+}
+.Content_institu {
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 80%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.img_titu {
+}
+.Comi_direct {
+}
+.Cartelera {
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	margin-left: 0;
+}
+.contenedor {
+	text-align: center;
+}
+.Noti_Hockey {
+	background-color: #E3E3E3;
+	width: 80%;
+	margin-left: 5%;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+.FormasdePago {
+	text-align: left;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 80%;
+	margin-top: 20px;
+}
+.img_prensa {
+	margin-top: 25px;
+	background-color: #E9E9E9;
+	background-image: url(img_prensa/peri%C3%B3dicos-viejos-27139993.jpg);
+}
+.Socios {
+	background-color: #557B93;
+	margin-bottom: 15PX;
+}
+.NOTICIAS_CELESTES_TITU {
+	background-color: #557B93;
+	margin-bottom: 35px;
+	border-radius: 5%;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 93.1%;
+	padding-left: 0.95%;
+	padding-right: 0.95%;
+	clear: none;
+}
+#div1 {
+}
+.pie1_inicio {
+	text-align: center;
+	clear: none;
+}
+.Pie_CE {
+	width: 100%;
+}
+.Direccion {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+.Comicion {
+	margin-left: auto;
+	margin-right: auto;
+}
+.Menu_titu {
+}
+.TEXTOS_DEP {
+	width: auto;
+	padding-top: auto;
+	padding-right: auto;
+	padding-bottom: auto;
+	padding-left: auto;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.encab_Dep {
+}
+.Map_CE {
+}
+.TituForm {
+}
+.Botones_DEP {
+}
+.Stage {
+}
+.Animate {
+}
+.Noti_Club {
+	width: 35%;
+}
+.menu_opSocios {
+	clear: none;
+	width: 38.7755%;
+	margin-left: 2.0408%;
+}
+.bot_deport {
+}
+.Noticias_Blogg {
+	background-color: #FFFFFF;
+	margin-top: 20px;
+}
+.Descargas_01 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.Content_institu {
+}
+.img_titu {
+}
+.Comi_direct {
+}
+.Cartelera {
+width: 100%;
+margin-left: 0;
+}
+.contenedor {
+}
+.Noti_Hockey {
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 80%;
+}
+.FormasdePago {
+}
+.img_prensa {
+}
+.Socios {
+}
+.NOTICIAS_CELESTES_TITU {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.8%;
+	max-width: 1232px;
+	padding-left: 0.6%;
+	padding-right: 0.6%;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	clear: none;
+}
+#div1 {
+}
+
+.pie1_inicio {
+	width: 18.9189%;
+	margin-left: 1.3513%;
+	clear: none;
+}
+.Pie_CE {
+	width: 100%;
+	margin-top: 10px;
+}
+.Direccion {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+.Comicion {
+	max-width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.Menu_titu {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: large;
+	background-color: #1387C4;
+}
+.TEXTOS_DEP {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.encab_Dep {
+}
+.Map_CE {
+}
+.TituForm {
+}
+.Botones_DEP {
+}
+.Stage {
+}
+.Animate {
+}
+.Noti_Club {
+}
+.menu_opSocios {
+	clear: none;
+	width: 45.9459%;
+	margin-left: 0;
+}
+.bot_deport {
+}
+.Noticias_Blogg {
+	text-align: justify;
+	width: 64%;
+	padding-top: 20px;
+	background-color: #FFFFFF;
+	margin-top: 40px;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.Descargas_01 {
+width: 45.9459%;
+margin-left: 1.3513%;
+clear: none;
+}
+.Content_institu {
+	text-align: justify;
+}
+.img_titu {
+}
+.Comi_direct {
+	text-align: left;
+}
+.Cartelera {
+	width: 59.4594%;
+	margin-left: 20%;
+}
+.contenedor {
+}
+.Noti_Hockey {
+	padding-right: 10%;
+	padding-left: 10%;
+	width: 70%;
+}
+.FormasdePago {
+}
+.img_prensa {
+}
+.Socios {
+}
+.NOTICIAS_CELESTES_TITU {
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
