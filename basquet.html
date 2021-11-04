@@ -1,167 +1,185 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
-<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="">
-<!--<![endif]-->
+
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Club Estudiantes -Basquet-</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="01_sitio_oficial_CE.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-body {
-	background-color: #FFFFFF;
-	padding-left: auto;
-	padding-right: auto;
-}
-a:link {
-	color: #000000;
-	text-decoration: none;
-}
-a:visited {
-	color: #787878;
-	text-decoration: none;
-}
-a:hover {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-a:active {
-	text-decoration: none;
-	left: auto;
-}
-</style>
-<!-- 
-To learn more about the conditional comments around the html tags at the top of the file:
-paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Club Estudiantes -Basquet-</title>
+    <link href="boilerplate.css" rel="stylesheet" type="text/css">
+    <link href="01_sitio_oficial_CE.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            padding-left: auto;
+            padding-right: auto;
+        }
+        
+        a:link {
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: #787878;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        
+        a:active {
+            text-decoration: none;
+            left: auto;
+        }
+    </style>
 
-Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
-* insert the link to your js here
-* remove the link below to the html5shiv
-* add the "no-js" class to the html tags at the top
-* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
--->
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="respond.min.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+    <script src="respond.min.js"></script>
+    <script type="text/javascript">
+        function MM_swapImgRestore() {
+            var i, x, a = document.MM_sr;
+            for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+        function MM_preloadImages() {
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length,
+                    a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
+        function MM_findObj(n, d) {
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() {
+            var i, j = 0,
+                x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+        }
+    </script>
 </head>
+
 <body onLoad="MM_preloadImages('img/Boton_00_sports_blanco.png','img/Boton_01_sports_blanco.png','img/Boton_02_sports_blanco.png','img/Boton_03_sports_blanco.png','img/Boton_04_sports_blanco.png','img/Boton_05_sports_blanco.png','img/Boton_06_sports_blanco.png','img/Boton_07_sports_blanco.png','img/Boton_08_sports_blanco.png','img/Boton_09_sports_blanco.png')">
- <div class="gridContainer clearfix"><img src="img/Encabezado_00.png" alt=""/>
-   <div id="div1" class="fluid">
-   <a href="index.html"><img src="img/Boton_inicio_150.png" alt=""/></a>
-   <a href="institucion.html"><img src="img/Boton_institucion_150.png" alt=""/></a>
-   <a href="deportes.html"><img src="img/Boton_deportes_150.png" alt=""/></a>
-   <a href="contacto.html"><img src="img/Boton_contacto150.png" alt=""/></a>
-   <a href="eventos.html"><img src="img/Boton_eventos_150.png" alt=""/></a>
-   <div class="fluid Menu_titu">DEPORTES</div>
-      </div><div class="fluid Animate"><img src="img/e_basquet.png" alt=""/></div>
-  <div class="fluid encab_Dep">
- BASQUET</div><br>
- <div class="fluid TEXTOS_DEP">
-   <p>Una actividad que se desarrolla todos los días, en las categorías -Mini basquet, U13, U15, U17, U19, Primera División y Femenino- y cuenta con un número superior a los 250 chicos divididos en sus respectivas categorías, según las edades de los deportistas.<br>
-     Escuelita, mosqutos, pre-mini y mini, con alumnos que van desde los 6 años hasta los 12 y las categorías competitivas, U13 -desde los 13 años- hasta los U19 -19 años-. Además, las categorías femeninas, también en todas las edades.</p>
-   </p>
-   <p><img src="img/img_00_basquet.png" alt=""/><img src="img/img_05_basquet.png" alt=""/></p>
-   <p>La actividad esta supervisada por el entrenador de Primera División Pablo Lamare. Mientras que el mini basquet esta orientado por Gonzalo Toto Schwindt, junto a Antonela De Niro y Malena Ruiz Cardozo.<br>
-     En las categorías competitivas, Lamare trabaja junto a Nicolas Pérez y Nicolás Cuello. Mientras que Ramiro Leguizamón, junto a Malena Ruiz Cardozo, trabajan en el basquet femenino.</p>
-   <p>En Mini basquet, se trabaja durante todo el año de manera intensa, realizando intercambios con equipos de diferentes lugares de la provincia y también del país, fomentando la amistad y recreación entre los deportistas.<br>
-     Además, el club Estudiantes se encarga todos los años de realizar el encuentro Provincial de Mini basquet, con la presencia de todos los clubes de La Pampa, con el objetivo de mantener un calendario activo.</p>
-   <p><img src="img/img_04_basquet.png" alt=""/><img src="img/basquetfem03.jpg" alt=""/></p>
-   <p>En las categorías competitivas y el basquet femenino, el club participa de la Liga Pampeana, correspondiente a la Federación Pampeana de basquet y del certamen asociativo, de la Asociación Centro Sur de Basquet.<br>
-     Además, durante el año, las diversas categorías participan de diferentes torneos a nivel nacional, con el objetivo de aumentar la participación de nuestros deportistas.</p>
-   <p>Es de nuestro interés participar de los distintos encuentros que se realizan en nuestra provincia y el país, ya que la prioridad de nuestros profesores es darle la mayor participaión posible a los deportistas, en los diferentes encuentros.</p>
-   <p>&nbsp;</p>
-   <p><strong>Horarios</strong></p>
-   <p><strong>Mosquitos (de 5 a 7 años): </strong>lunes, miércoles y viernes de 18 a 19 horas -en el gimnasio auxiliar-.<br>
-     <strong>Pre mini (8 y 9 años): </strong>martes y viernes de 18 a 19 horas -Gimnasio principal y auxiliar-.<br>
-     <strong>Mini (10 y 11 años): </strong>lunes, miércoles y jueves de 18 a 19 horas -gimnasio principal y auxiliar-.<br>
-     <strong>U13 (12 y 13 años): </strong>lunes, miércoles, jueves y viernes de 18:30 a 20 horas -gimnasio principal y auxiliar-.<br>
-     <strong>U15 (14 y 14 años): </strong>lunes, miércoles y viernes de 19:30 a 21 horas. Martes y jueves de 18:30 a 20 horas -gimnasio principal y auxiliar-.<br>
-     <strong>U17 (16 y 17 años): </strong>lunes y miércoles de 20:30 a 22 horas. Jueves de 17 a 18 hoas y viernes de 16:30 a 18 horas.<br>
-     <strong>U19 (18 y 19 años): </strong>lunes, miércoles y viernes de 17 a 18 horas -gimnasio principal-.<br>
-     <strong>Primera División: </strong>de lunes a viernes, desde las 21 horas -gimnasio principal-.<br>
-     <strong>Basquet femenino:</strong> U13 y U15, lunes miércoles y viernes de 19 a 20 horas -gimnasio auxiliar-.<br>
-     <strong>U17:</strong> lunes, miércoles y viernes de 20 a 21 horas y Primera: lunes y miñercoles de 20 a 21 horas. Viernes, de 19 a 20 horas.</p>
- </div>
- <p>&nbsp;</p>
- <div class="fluid encab_Dep">&quot;Noticias
- Basquet&quot;</div>
- <div class="fluid Noti_Hockey"><script src="http://feeds.feedburner.com/com/TLkP?format=sigpro" type="text/javascript" ></script><noscript><p>Suscribirse a las actualizaciones de titulares RSS de: <a href="http://feeds.feedburner.com/com/TLkP"></a><br/>Ofrecido por FeedBurner</p> </noscript></div>
- <footer class="fluid Pie_CE zeroMargin_desktop">
-   <div class="fluid pie1_inicio zeroMargin_desktop">
-     <h2>Inicio </h2>
-     <p><a href="http://noticiasclube.blogspot.com.ar">Noticias del Club</a><br>
-       <a href="eventos.html">Cartelera -Eventos-</a><br>
-       <a href="fotos.html">Fotos</a><br>
-       <a href="descargas.html">Descargas </a><br>
-       <a href="descargas.html">Socios Requisitos</a><br>
-       <a href="formasdepago.html">Formas de Pago</a><br>
-       <a href="polideportivo.html">Polideportivo “V. Arriaga”</a><br>
-     </p>
-   </div>
-   <div class="fluid pie1_inicio">
-     <h2>Institución</h2>
-     <p><a href="institucion.html">Historia</a><br>
-       <a href="institucion.html">C. Directiva</a><br>
-       <a href="institucion.html">Obras</a><br>
-       <a href="institucion.html">Normativas</a><br>
-       <a href="institucion.html">Convenios con otras Instituciones</a><br>
-       <a href="institucion.html">Seguros </a><br>
-       <a href="institucion.html">RRHH</a></p>
-   </div>
-   <div class="fluid pie1_inicio">
-     <h2>Deportes</h2>
-     <p><a href="cesto.html">Cesto</a><br>
-       <a href="hockey.html">Hockey</a><br>
-       <a href="basquet.html">Basquet</a><br>
-       <a href="rugby.html">Rugby</a><br>
-       <a href="tenis.html">Tenis</a><br>
-       <a href="gimnasia.html">Gimnasia Artística</a><br>
-       <a href="artesmarciales.html">Artes Marciales</a><br>
-       <a href="futbol.html">Futbol</a><br>
-       <a href="jardin.html">Iniciación Deportiva</a></p>
-   </div>
-   <div class="fluid pie1_inicio">
-     <h2>Contacto</h2>
-     <p><a href="contacto.html">Dirección</a><br>
-       <a href="contacto.html">Telefono</a><br>
-       <a href="contacto.html">Mail</a><br>
-       <a href="https://www.facebook.com/estudiantes.desantarosa?fref=ts"><img src="img/face02.png" alt="" width="43" height="43"/>Facebook</a><br>
-       <a href="https://twitter.com/Estudiantes_SR"> <img src="img/twit02.png" alt="" width="39" height="39"/>Twitter</a><br>
-       <a href="contacto.html">Ubicación en mapa</a></p>
-   </div>
-   <div class="fluid pie1_inicio">
-     <h2>Eventos</h2>
-     <p><a href="eventos.html">Cartelera</a></p>
-   </div>
- </footer>
- </div>
+    <div class="gridContainer clearfix"><img src="img/Encabezado_00.png" alt="" />
+        <div id="div1" class="fluid">
+            <a href="index.html"><img src="img/Boton_inicio_150.png" alt="" /></a>
+            <a href="institucion.html"><img src="img/Boton_institucion_150.png" alt="" /></a>
+            <a href="deportes.html"><img src="img/Boton_deportes_150.png" alt="" /></a>
+            <a href="contacto.html"><img src="img/Boton_contacto150.png" alt="" /></a>
+            <a href="eventos.html"><img src="img/Boton_eventos_150.png" alt="" /></a>
+            <div class="fluid Menu_titu">DEPORTES</div>
+        </div>
+        <div class="fluid Animate"><img src="img/e_basquet.png" alt="" /></div>
+        <div class="fluid encab_Dep">
+            BASQUET</div><br>
+        <div class="fluid TEXTOS_DEP">
+            <p>Una actividad que se desarrolla todos los días, en las categorías -Mini basquet, U13, U15, U17, U19, Primera División y Femenino- y cuenta con un número superior a los 250 chicos divididos en sus respectivas categorías, según las edades de
+                los deportistas.<br> Escuelita, mosqutos, pre-mini y mini, con alumnos que van desde los 6 años hasta los 12 y las categorías competitivas, U13 -desde los 13 años- hasta los U19 -19 años-. Además, las categorías femeninas, también en todas
+                las edades.</p>
+            </p>
+            <p><img src="img/img_00_basquet.png" alt="" /><img src="img/img_05_basquet.png" alt="" /></p>
+            <p>La actividad esta supervisada por el entrenador de Primera División Pablo Lamare. Mientras que el mini basquet esta orientado por Gonzalo Toto Schwindt, junto a Antonela De Niro y Malena Ruiz Cardozo.<br> En las categorías competitivas, Lamare
+                trabaja junto a Nicolas Pérez y Nicolás Cuello. Mientras que Ramiro Leguizamón, junto a Malena Ruiz Cardozo, trabajan en el basquet femenino.</p>
+            <p>En Mini basquet, se trabaja durante todo el año de manera intensa, realizando intercambios con equipos de diferentes lugares de la provincia y también del país, fomentando la amistad y recreación entre los deportistas.<br> Además, el club
+                Estudiantes se encarga todos los años de realizar el encuentro Provincial de Mini basquet, con la presencia de todos los clubes de La Pampa, con el objetivo de mantener un calendario activo.</p>
+            <p><img src="img/img_04_basquet.png" alt="" /><img src="img/basquetfem03.jpg" alt="" /></p>
+            <p>En las categorías competitivas y el basquet femenino, el club participa de la Liga Pampeana, correspondiente a la Federación Pampeana de basquet y del certamen asociativo, de la Asociación Centro Sur de Basquet.<br> Además, durante el año,
+                las diversas categorías participan de diferentes torneos a nivel nacional, con el objetivo de aumentar la participación de nuestros deportistas.</p>
+            <p>Es de nuestro interés participar de los distintos encuentros que se realizan en nuestra provincia y el país, ya que la prioridad de nuestros profesores es darle la mayor participaión posible a los deportistas, en los diferentes encuentros.</p>
+            <p>&nbsp;</p>
+            <p><strong>Horarios</strong></p>
+            <p><strong>Mosquitos (de 5 a 7 años): </strong>lunes, miércoles y viernes de 18 a 19 horas -en el gimnasio auxiliar-.<br>
+                <strong>Pre mini (8 y 9 años): </strong>martes y viernes de 18 a 19 horas -Gimnasio principal y auxiliar-.<br>
+                <strong>Mini (10 y 11 años): </strong>lunes, miércoles y jueves de 18 a 19 horas -gimnasio principal y auxiliar-.<br>
+                <strong>U13 (12 y 13 años): </strong>lunes, miércoles, jueves y viernes de 18:30 a 20 horas -gimnasio principal y auxiliar-.<br>
+                <strong>U15 (14 y 14 años): </strong>lunes, miércoles y viernes de 19:30 a 21 horas. Martes y jueves de 18:30 a 20 horas -gimnasio principal y auxiliar-.<br>
+                <strong>U17 (16 y 17 años): </strong>lunes y miércoles de 20:30 a 22 horas. Jueves de 17 a 18 hoas y viernes de 16:30 a 18 horas.<br>
+                <strong>U19 (18 y 19 años): </strong>lunes, miércoles y viernes de 17 a 18 horas -gimnasio principal-.<br>
+                <strong>Primera División: </strong>de lunes a viernes, desde las 21 horas -gimnasio principal-.<br>
+                <strong>Basquet femenino:</strong> U13 y U15, lunes miércoles y viernes de 19 a 20 horas -gimnasio auxiliar-.<br>
+                <strong>U17:</strong> lunes, miércoles y viernes de 20 a 21 horas y Primera: lunes y miñercoles de 20 a 21 horas. Viernes, de 19 a 20 horas.</p>
+        </div>
+        <p>&nbsp;</p>
+        <div class="fluid encab_Dep">&quot;Noticias Basquet&quot;
+        </div>
+        <div class="fluid Noti_Hockey">
+            <script src="http://feeds.feedburner.com/com/TLkP?format=sigpro" type="text/javascript"></script><noscript><p>Suscribirse a las actualizaciones de titulares RSS de: <a href="http://feeds.feedburner.com/com/TLkP"></a><br/>Ofrecido por FeedBurner</p> </noscript></div>
+        <footer class="fluid Pie_CE zeroMargin_desktop">
+            <div class="fluid pie1_inicio zeroMargin_desktop">
+                <h2>Inicio </h2>
+                <p><a href="http://noticiasclube.blogspot.com.ar">Noticias del Club</a><br>
+                    <a href="eventos.html">Cartelera -Eventos-</a><br>
+                    <a href="fotos.html">Fotos</a><br>
+                    <a href="descargas.html">Descargas </a><br>
+                    <a href="descargas.html">Socios Requisitos</a><br>
+                    <a href="formasdepago.html">Formas de Pago</a><br>
+                    <a href="polideportivo.html">Polideportivo “V. Arriaga”</a><br>
+                </p>
+            </div>
+            <div class="fluid pie1_inicio">
+                <h2>Institución</h2>
+                <p><a href="institucion.html">Historia</a><br>
+                    <a href="institucion.html">C. Directiva</a><br>
+                    <a href="institucion.html">Obras</a><br>
+                    <a href="institucion.html">Normativas</a><br>
+                    <a href="institucion.html">Convenios con otras Instituciones</a><br>
+                    <a href="institucion.html">Seguros </a><br>
+                    <a href="institucion.html">RRHH</a></p>
+            </div>
+            <div class="fluid pie1_inicio">
+                <h2>Deportes</h2>
+                <p><a href="cesto.html">Cesto</a><br>
+                    <a href="hockey.html">Hockey</a><br>
+                    <a href="basquet.html">Basquet</a><br>
+                    <a href="rugby.html">Rugby</a><br>
+                    <a href="tenis.html">Tenis</a><br>
+                    <a href="gimnasia.html">Gimnasia Artística</a><br>
+                    <a href="artesmarciales.html">Artes Marciales</a><br>
+                    <a href="futbol.html">Futbol</a><br>
+                    <a href="jardin.html">Iniciación Deportiva</a></p>
+            </div>
+            <div class="fluid pie1_inicio">
+                <h2>Contacto</h2>
+                <p><a href="contacto.html">Dirección</a><br>
+                    <a href="contacto.html">Telefono</a><br>
+                    <a href="contacto.html">Mail</a><br>
+                    <a href="https://www.facebook.com/estudiantes.desantarosa?fref=ts"><img src="img/face02.png" alt="" width="43" height="43" />Facebook</a><br>
+                    <a href="https://twitter.com/Estudiantes_SR"> <img src="img/twit02.png" alt="" width="39" height="39" />Twitter</a><br>
+                    <a href="contacto.html">Ubicación en mapa</a></p>
+            </div>
+            <div class="fluid pie1_inicio">
+                <h2>Eventos</h2>
+                <p><a href="eventos.html">Cartelera</a></p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
